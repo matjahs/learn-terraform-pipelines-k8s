@@ -1,14 +1,15 @@
 terraform {
   backend "remote" {
-    organization = "hashicorp-learn"
+    organization = "matjah"
     workspaces {
       name = "learn-terraform-pipelines-k8s"
     }
   }
+
   required_providers {
-    google = {
-      source  = "hashicorp/google"
-      version = "~> 3.55"
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "=3.0.0"
     }
   }
 

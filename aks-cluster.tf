@@ -1,7 +1,7 @@
 resource "random_pet" "prefix" {}
 
 resource "azurerm_resource_group" "default" {
-  name     = "${random_pet.prefix.id}-rg"
+  name     = "MC_liked-feline-rg_liked-feline-aks_westeurope"
   location = "westeurope"
 
   tags = {
