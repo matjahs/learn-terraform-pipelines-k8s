@@ -4,7 +4,7 @@ variable "enable_consul_and_vault" {
   description = "Enable consul and vault for the secrets cluster"
 }
 
-variable "appId" {
+variable "app_id" {
   type        = string
   description = "Azure App ID"
 }
